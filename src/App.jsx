@@ -2,14 +2,14 @@ import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import "./index.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Main />
       <Footer />
-      <p>Welcome to my React App!</p>
     </div>
   );
 }

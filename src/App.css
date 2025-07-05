@@ -18,6 +18,22 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px;
+  background-color: #232a34;
+  border-radius: 15px;
+  border: none;
+}
+
+.span-container {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
