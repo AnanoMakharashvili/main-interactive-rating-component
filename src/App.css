@@ -21,17 +21,75 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 32px;
   background-color: #232a34;
   border-radius: 15px;
   border: none;
 }
 
+.header-container {
+  display: flex;
+}
+
+.star-icon {
+  background-color: #262e38;
+  padding: 10px;
+  border-radius: 16px;
+  width: 13px;
+  display: flex;
+}
+
+.main-title {
+  font-size: 24px;
+}
+
+.main-description {
+  font-size: 14px;
+  color: #969fad;
+}
+
+.rating-number {
+  background-color: #262e38;
+  color: #7c8798;
+  padding: 10px;
+  border-radius: 37px;
+  width: 20px;
+  height: 19px;
+}
+
 .span-container {
   display: flex;
   gap: 17px;
   justify-content: center;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #fc7614;
+  color: #ffffff;
+  padding: 12px 110px;
+  border-radius: 22.5px;
+  border: none;
+}
+
+.second-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+}
+
+.selected-rating {
+  font-size: 14px;
+  color: #fc7614;
+  background-color: #262e38;
+  padding: 5px 12px;
+  border-radius: 22px;
+}
+
+.thank-you-style {
+  font-size: 24px;
 }
 
 @keyframes logo-spin {

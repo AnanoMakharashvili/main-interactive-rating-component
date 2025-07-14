@@ -1,14 +1,8 @@
-const Footer = () => {
+import React from "react";
+
+const Footer = ({ onSubmit }) => {
   return (
-    <button
-      style={{
-        backgroundColor: "#FC7614",
-        color: "#FFFFFF",
-        padding: "12px 110px",
-        borderRadius: "22.5px",
-        border: "none",
-      }}
-    >
+    <button className="submit-button" onClick={onSubmit}>
       SUBMIT
     </button>
   );
