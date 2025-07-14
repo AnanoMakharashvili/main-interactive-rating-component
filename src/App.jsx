@@ -1,6 +1,8 @@
 import "./App.css";
 import { Header, Main, Footer } from "./components";
+import { SecondHeader } from "./secondpagecomponents";
 import "./index.css";
+import React from "react";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
+      <SecondHeader />
     </div>
   );
 }
