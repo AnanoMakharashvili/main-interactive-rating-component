@@ -58,6 +58,17 @@
   height: 19px;
 }
 
+.rating-number:hover {
+  background-color: #fc7614;
+  color: white;
+}
+
+.rating-number.selected {
+  background-color: #7c8798;
+  color: white;
+  border: 1px solid black;
+}
+
 .span-container {
   display: flex;
   gap: 17px;
@@ -71,6 +82,12 @@
   padding: 12px 110px;
   border-radius: 22.5px;
   border: none;
+}
+
+.submit-button.active {
+  background-color: white;
+  color: #fc7614;
+  cursor: pointer;
 }
 
 .second-header-container {

@@ -6,21 +6,29 @@ import React, { useState } from "react";
 
 function App() {
   const [showSecondPage, setShowSecondPage] = useState(false);
+  const [selectedRating, setSelectedRating] = useState(null);
+
   const handleSubmit = () => {
-    setShowSecondPage(true);
+    if (selectedRating !== null) {
+      setShowSecondPage(true);
+    }
   };
+
   return (
     <div className="container">
       {!showSecondPage ? (
         <>
           <Header />
-          <Main />
-          <Footer onSubmit={handleSubmit} />
+          <Main
+            selectedRating={selectedRating}
+            setSelectedRating={setSelectedRating}
+          />
+          <Footer onSubmit={handleSubmit} selectedRating={selectedRating} />
         </>
       ) : (
         <>
           <SecondHeader />
-          <SecondMain />
+          <SecondMain selectedRating={selectedRating} />
         </>
       )}
     </div>

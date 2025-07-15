@@ -1,8 +1,12 @@
 import React from "react";
 
-const Footer = ({ onSubmit }) => {
+const Footer = ({ onSubmit, selectedRating }) => {
   return (
-    <button className="submit-button" onClick={onSubmit}>
+    <button
+      className={`submit-button ${selectedRating !== null ? "active" : ""}`}
+      onClick={onSubmit}
+      disabled={selectedRating === null}
+    >
       SUBMIT
     </button>
   );
