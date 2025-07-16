@@ -27,7 +27,7 @@ function App() {
         </>
       ) : (
         <>
-          <SecondHeader />
+          <SecondHeader selectedRating={selectedRating} />
           <SecondMain selectedRating={selectedRating} />
         </>
       )}
